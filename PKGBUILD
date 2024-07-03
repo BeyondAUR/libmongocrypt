@@ -17,7 +17,7 @@ source=(
   ${pkgname}-${pkgver}.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz
   shared-libbson.patch::$url/pull/681.patch
 )
-sha256sums=('a99a80aa9973b19ff2836da218c2b27361f101858816e232736e2edac4f3d688'
+sha256sums=('45c5aaef6871c62a1e70b17cdb8547752c75edd0e21685f5184090a1a976e636'
             '9064949bcd1b0496b7949f6646ab97d2e97b49255f9548ada909be228a5889a2')
 
 prepare() {
