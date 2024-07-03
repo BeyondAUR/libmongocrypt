@@ -1,8 +1,8 @@
 # Maintainer: Martin Reboredo <yakoyoku@gmail.com>
 
 pkgname=libmongocrypt
-pkgver=1.8.2
-pkgrel=2
+pkgver=1.10.1
+pkgrel=1
 pkgdesc='C library for client side and queryable encryption in MongoDB'
 arch=('x86_64')
 url='https://github.com/mongodb/libmongocrypt'
@@ -14,7 +14,7 @@ provides=(
 depends=(libbson)
 makedepends=(cmake git)
 source=(
-  $url/archive/refs/tags/$pkgver.tar.gz
+  ${pkgname}-${pkgver}.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz
   shared-libbson.patch::$url/pull/681.patch
 )
 sha256sums=('a99a80aa9973b19ff2836da218c2b27361f101858816e232736e2edac4f3d688'
